@@ -329,7 +329,7 @@ var k=o.trim();if(!k)continue;n.nodeValue=(LANG==="en"&&TR[k]!==undefined)?o.rep
 document.querySelectorAll("[placeholder]").forEach(function(e){if(!e.dataset.ph)e.dataset.ph=e.placeholder;e.placeholder=LANG==="en"&&PH[e.dataset.ph]?PH[e.dataset.ph]:e.dataset.ph})}
 function setLang(l){LANG=l;try{localStorage.setItem("lg",l)}catch(e){}var d=document.documentElement;d.lang=l;d.dir=l==="en"?"ltr":"rtl";tr();document.getElementById("lgb").textContent=l==="en"?"عربي":"EN"}
 function toggleLang(){setLang(LANG==="en"?"ar":"en")}
-function brief(){if(BRIEF_URL){window.open(BRIEF_URL,"_blank")}else{window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("أهلاً Advera، عايز أحكيلكم عن شغلي"),"_blank")}}
+function brief(){if(BRIEF_URL){window.open(BRIEF_URL,"_blank")}else{window.open("https://docs.google.com/forms/d/e/1FAIpQLSfOfSwTI9S3mOj9CkqXCA2qVnkx5dsTNMrgG4k90zQPq_3Q2Q/viewform?usp=header")}}
 var vs=document.getElementById("vis");if(vs){vs.addEventListener("mousemove",function(e){var r=vs.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;vs.style.transform="perspective(900px) rotateY("+x*8+"deg) rotateX("+(-y*8)+"deg)"});vs.addEventListener("mouseleave",function(){vs.style.transform=""})}
 setLang(LANG);
 </script>
